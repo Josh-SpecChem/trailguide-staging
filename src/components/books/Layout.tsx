@@ -4,7 +4,7 @@ import ReflectionSection from "./ReflectionSection";
 import FootnotePopover from "./FootnotePopover";
 import ProgressBar from "./ProgressBar";
 import HighlightedText from "./HighlightedText";
-import BookSidebar from "../books/BookSidebar";
+import BookSidebar from "./BookSidebar";
 // import { Progress } from "@/components/ui/progress"; // ShadCN Progress component if available
 
 interface LayoutProps {

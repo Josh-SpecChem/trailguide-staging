@@ -35,8 +35,8 @@ interface PageParams {
   chapter: string;
 }
 
-export default async function Page({ params }: { params: PageParams }) {
-  const { book, chapter } = params;
+export default async function Page({ params }: { params: Promise<PageParams> }) {
+  const { book, chapter } = await params;
   const chapters = getChapters(book);
   if (!chapters.length) return notFound();
 
